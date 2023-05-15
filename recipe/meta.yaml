@@ -1,5 +1,5 @@
 {% set name = "sphinxext-altair" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinxext_altair-{{ version }}.tar.gz
-  sha256: 8d20ee3ec93ca00515a4249f43d2f1056d7fc6630aa122c8110d435a601dddfd
+  sha256: eac920f97fdc9d44b669f442c24f6d96ea4f236179b96c25df41a8cd4385e5f6
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - hatchling
   run:
     - python >=3.7
-    - altair >=4.0
+    - altair >=4.0.0
     - docutils
     - jinja2
     - sphinx
